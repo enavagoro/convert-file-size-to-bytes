@@ -1,8 +1,8 @@
-Description:
+**Description:**
 
 Convert a string representation of file size to bytes
 
-Example: 
+**Example:**
 
 '100kb' => 102400 bytes
 '100 kb' => 102400 bytes
@@ -10,10 +10,10 @@ Example:
 '100 kB' => 102400 bytes
 '100k' => Error
 
-Units:
+**Units:**
 
 'b' 'kb' 'mb' 'gb' 'tb' 'pb'
 
-Install:
+**Install:**
 
 npm i convert-file-size-to-bytes
