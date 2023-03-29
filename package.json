@@ -1,15 +1,17 @@
 {
   "name": "convert-file-size-to-bytes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert a string representation of file size to bytes",
   "license":"MIT",
   "author": "vase-labs",
   "main": "dist-node/index.js",
+  "types": "index.d.ts",
   "browser":"dist-browser/index.js",
   "scripts": {
     "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6",
     "build-node": "tsc src/index.ts --outDir dist-node",
-    "build": "npm run build-browser && npm run build-node"
+    "build": "npm run build-browser && npm run build-node",
+    "build-types": "tsc src/index.ts --declaration --declarationDir ."
   },
   "devDependencies": {
     "typescript": "^5.0.2"
